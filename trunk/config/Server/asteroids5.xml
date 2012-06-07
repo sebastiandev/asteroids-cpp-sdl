@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<asteroids ancho="800" alto="600">
+  <tiposAsteroide>
+    <tipoAsteroide nombre="asteriode1" imagen="..\config\server\asteroide1.png" ancho="40" alto="40" rotacion="0" />
+    <tipoAsteroide nombre="asteriode4" imagen="..\config\server\asteroide2.png" ancho="80" alto="80" rotacion="45" />
+  </tiposAsteroide>
+  <asteroides>
+    <asteroide tipo="asteriode1" x="50" y="60" direccion="20" velocidad="50" />
+    <asteroide tipo="asteriode4" x="270" y="80" direccion="40" velocidad="100" />
+    <asteroide tipo="asteriode1" x="120" y="400" direccion="90" velocidad="94" />
+<asteroide tipo="asteriode4" x="50" y="70" direccion="40" velocidad="100" />
+  </asteroides>
+</asteroids>

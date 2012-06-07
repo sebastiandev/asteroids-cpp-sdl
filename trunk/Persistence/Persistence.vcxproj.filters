@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\persistence">
+      <UniqueIdentifier>{7fcad99b-3877-4e72-9717-3a6926567c60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\persistence">
+      <UniqueIdentifier>{2df3b53f-0ba5-41e1-b081-79466840f1c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\validation">
+      <UniqueIdentifier>{4e12e3a4-4488-499c-96e3-297a36cd76f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\validation">
+      <UniqueIdentifier>{682e8216-32a4-4bfc-bd5b-0f1ccc46dda0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\io">
+      <UniqueIdentifier>{70f52152-46bc-41ef-942e-346f2f4743ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io">
+      <UniqueIdentifier>{ef308fba-a8d4-40d0-843b-093448d03bd3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="persistence\PersistenceException.h">
+      <Filter>Header Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\EntityRepository.h">
+      <Filter>Header Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\EntitySAX2Handler.h">
+      <Filter>Header Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\ValidationException.h">
+      <Filter>Header Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\Attribute.h">
+      <Filter>Header Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="validation\AttributeValidator.h">
+      <Filter>Header Files\validation</Filter>
+    </ClInclude>
+    <ClInclude Include="validation\ElementValidator.h">
+      <Filter>Header Files\validation</Filter>
+    </ClInclude>
+    <ClInclude Include="validation\FileValidator.h">
+      <Filter>Header Files\validation</Filter>
+    </ClInclude>
+    <ClInclude Include="validation\NameValidator.h">
+      <Filter>Header Files\validation</Filter>
+    </ClInclude>
+    <ClInclude Include="validation\NumberValidator.h">
+      <Filter>Header Files\validation</Filter>
+    </ClInclude>
+    <ClInclude Include="validation\XMLDocumentValidator.h">
+      <Filter>Header Files\validation</Filter>
+    </ClInclude>
+    <ClInclude Include="validation\XMLValidatorFactory.h">
+      <Filter>Header Files\validation</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\EntitySAX2ErrorHandler.h">
+      <Filter>Header Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\Element.h">
+      <Filter>Header Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\ElementLocation.h">
+      <Filter>Header Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\SceneRepository.h">
+      <Filter>Header Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="io\File.h">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\IOException.h">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="persistence\PersistenceException.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\EntityRepository.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\EntitySAX2Handler.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\ValidationException.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\Attribute.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="validation\AttributeValidator.cpp">
+      <Filter>Source Files\validation</Filter>
+    </ClCompile>
+    <ClCompile Include="validation\ElementValidator.cpp">
+      <Filter>Source Files\validation</Filter>
+    </ClCompile>
+    <ClCompile Include="validation\FileValidator.cpp">
+      <Filter>Source Files\validation</Filter>
+    </ClCompile>
+    <ClCompile Include="validation\NameValidator.cpp">
+      <Filter>Source Files\validation</Filter>
+    </ClCompile>
+    <ClCompile Include="validation\NumberValidator.cpp">
+      <Filter>Source Files\validation</Filter>
+    </ClCompile>
+    <ClCompile Include="validation\XMLDocumentValidator.cpp">
+      <Filter>Source Files\validation</Filter>
+    </ClCompile>
+    <ClCompile Include="validation\XMLValidatorFactory.cpp">
+      <Filter>Source Files\validation</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\EntitySAX2ErrorHandler.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\Element.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\ElementLocation.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\SceneRepository.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="io\File.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\IOException.cpp">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{963CE916-79A3-4F7D-8EF5-23FAB68DD9D8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameBootstrap</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\lib\SDL_mixer-1.2.12\include;..\lib\xerces-c-3.1.1-x86-windows-vc-10.0\include;..\lib\SDL_ttf-2.0.10\include;..\lib\SDL_gfx-2.0.23\include;..\lib\SDL_image-1.2.12\include;..\lib\SDL-1.2.15\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib\SDL_mixer-1.2.12\lib\x86;..\lib\xerces-c-3.1.1-x86-windows-vc-10.0\lib;..\lib\SDL_ttf-2.0.10\lib\x86;..\lib\SDL_gfx-2.0.23\lib;..\lib\SDL_image-1.2.12\lib\x86;..\lib\SDL-1.2.15\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Util;..\Persistence;..\GameView;..\GameModel;..\lib\xerces-c-3.1.1-x86-windows-vc-10.0\include;..\lib\SDL-1.2.15\include;..\lib\SDL_image-1.2.12\include;..\lib\SDL_gfx-2.0.23\include;..\lib\SDL_ttf-2.0.10\include;..\lib\SDL_mixer-1.2.12\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\Debug;..\lib\SDL-1.2.15\lib;..\lib\SDL_image-1.2.12\lib;..\lib\SDL_gfx-2.0.23\lib;..\lib\SDL_ttf-2.0.10\lib;..\lib\SDL_mixer-1.2.12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Util.lib;Persistence.lib;GameModel.lib;GameView.lib;SDL.lib;SDLmain.lib;SDL_image.lib;SDL_gfx.lib;SDL_ttf.lib;ws2_32.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;Ws2_32.lib; Iphlpapi.lib; dnsapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AsteroidsClient.h" />
+    <ClInclude Include="AsteroidsEvent.h" />
+    <ClInclude Include="AsteroidsEventList.h" />
+    <ClInclude Include="AsteroidsMenuListener.h" />
+    <ClInclude Include="AsteroidsMsg.h" />
+    <ClInclude Include="AsteroidsServer.h" />
+    <ClInclude Include="AsteroidsServerListener.h" />
+    <ClInclude Include="Bootstrap.h" />
+    <ClInclude Include="ClientHandler.h" />
+    <ClInclude Include="concurrent\ConcurrentException.h" />
+    <ClInclude Include="concurrent\CriticalSection.h" />
+    <ClInclude Include="concurrent\Lock.h" />
+    <ClInclude Include="concurrent\Mutex.h" />
+    <ClInclude Include="concurrent\Runnable.h" />
+    <ClInclude Include="concurrent\Thread.h" />
+    <ClInclude Include="io\Dir.h" />
+    <ClInclude Include="net\SocketException.h" />
+    <ClInclude Include="net\TCPSocket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AsteroidsClient.cpp" />
+    <ClCompile Include="AsteroidsEventList.cpp" />
+    <ClCompile Include="AsteroidsMenuListener.cpp" />
+    <ClCompile Include="AsteroidsMsg.cpp" />
+    <ClCompile Include="AsteroidsServer.cpp" />
+    <ClCompile Include="AsteroidsServerListener.cpp" />
+    <ClCompile Include="Bootstrap.cpp" />
+    <ClCompile Include="ClientHandler.cpp" />
+    <ClCompile Include="concurrent\ConcurrentException.cpp" />
+    <ClCompile Include="concurrent\CriticalSection.cpp" />
+    <ClCompile Include="concurrent\Lock.cpp" />
+    <ClCompile Include="concurrent\Mutex.cpp" />
+    <ClCompile Include="concurrent\Runnable.cpp" />
+    <ClCompile Include="concurrent\Thread.cpp" />
+    <ClCompile Include="io\Dir.cpp" />
+    <ClCompile Include="net\SocketException.cpp" />
+    <ClCompile Include="net\TCPSocket.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

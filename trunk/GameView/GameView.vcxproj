@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="controller\ClientActionsListener.h" />
+    <ClInclude Include="sdl\Color.h" />
+    <ClInclude Include="sdl\Dimension.h" />
+    <ClInclude Include="sdl\event\SDLEvent.h" />
+    <ClInclude Include="sdl\event\SDLKeyboardEvent.h" />
+    <ClInclude Include="sdl\event\SDLMouseEvent.h" />
+    <ClInclude Include="sdl\KeyboardListener.h" />
+    <ClInclude Include="sdl\Layout.h" />
+    <ClInclude Include="sdl\mixer\Mixer.h" />
+    <ClInclude Include="sdl\MouseListener.h" />
+    <ClInclude Include="sdl\ScrollablePanelLayout.h" />
+    <ClInclude Include="sdl\SDLButton.h" />
+    <ClInclude Include="sdl\SDLButtonPanel.h" />
+    <ClInclude Include="sdl\SDLComponent.h" />
+    <ClInclude Include="sdl\SDLLabel.h" />
+    <ClInclude Include="sdl\SDLPanel.h" />
+    <ClInclude Include="sdl\SDLScrollBar.h" />
+    <ClInclude Include="sdl\SDLStatusBar.h" />
+    <ClInclude Include="sdl\SDLSurface.h" />
+    <ClInclude Include="sdl\SDLTab.h" />
+    <ClInclude Include="sdl\SDLTabPanel.h" />
+    <ClInclude Include="sdl\SDLTextbox.h" />
+    <ClInclude Include="sdl\SDLToggleButton.h" />
+    <ClInclude Include="sdl\Viewport.h" />
+    <ClInclude Include="view\ClientView.h" />
+    <ClInclude Include="view\EntityView.h" />
+    <ClInclude Include="view\ScreenManager.h" />
+    <ClInclude Include="view\ShipView.h" />
+    <ClInclude Include="view\StartWindow.h" />
+    <ClInclude Include="view\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="controller\ClientActionsListener.cpp" />
+    <ClCompile Include="sdl\Color.cpp" />
+    <ClCompile Include="sdl\Dimension.cpp" />
+    <ClCompile Include="sdl\event\SDLEvent.cpp" />
+    <ClCompile Include="sdl\event\SDLKeyboardEvent.cpp" />
+    <ClCompile Include="sdl\event\SDLMouseEvent.cpp" />
+    <ClCompile Include="sdl\KeyboardListener.cpp" />
+    <ClCompile Include="sdl\Layout.cpp" />
+    <ClCompile Include="sdl\mixer\Mixer.cpp" />
+    <ClCompile Include="sdl\MouseListener.cpp" />
+    <ClCompile Include="sdl\ScrollablePanelLayout.cpp" />
+    <ClCompile Include="sdl\SDLButton.cpp" />
+    <ClCompile Include="sdl\SDLButtonPanel.cpp" />
+    <ClCompile Include="sdl\SDLComponent.cpp" />
+    <ClCompile Include="sdl\SDLLabel.cpp" />
+    <ClCompile Include="sdl\SDLPanel.cpp" />
+    <ClCompile Include="sdl\SDLScrollBar.cpp" />
+    <ClCompile Include="sdl\SDLStatusBar.cpp" />
+    <ClCompile Include="sdl\SDLSurface.cpp" />
+    <ClCompile Include="sdl\SDLTab.cpp" />
+    <ClCompile Include="sdl\SDLTabPanel.cpp" />
+    <ClCompile Include="sdl\SDLTextbox.cpp" />
+    <ClCompile Include="sdl\SDLToggleButton.cpp" />
+    <ClCompile Include="sdl\Viewport.cpp" />
+    <ClCompile Include="view\ClientView.cpp" />
+    <ClCompile Include="view\EntityView.cpp" />
+    <ClCompile Include="view\ScreenManager.cpp" />
+    <ClCompile Include="view\ShipView.cpp" />
+    <ClCompile Include="view\StartWindow.cpp" />
+    <ClCompile Include="view\Window.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6EC422AF-D275-46EB-A4E0-6D71DD92FE5E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameView</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>..\lib\SDL_mixer-1.2.12\lib\x86;..\lib\SDL-1.2.15\lib\x86;..\lib\SDL_ttf-2.0.11\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\lib\SDL_mixer-1.2.12\include;..\lib\SDL-1.2.15\include;..\lib\SDL_ttf-2.0.11\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\lib\SDL-1.2.15\include;..\lib\SDL_image-1.2.12\include;..\lib\SDL_gfx-2.0.23\include;..\lib\SDL_ttf-2.0.10\include;..\GameModel;..\Util;..\lib\SDL_mixer-1.2.12\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;SDL_image.lib;SDL_gfx.lib;SDL_ttf.lib;Util.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib\SDL-1.2.15\lib;..\lib\SDL_image-1.2.12\lib;..\lib\SDL_gfx-2.0.23\lib;..\lib\SDL_ttf-2.0.10\lib;..\Debug;..\lib\SDL_mixer-1.2.12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;Ws2_32.lib; Iphlpapi.lib; dnsapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

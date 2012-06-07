@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<asteroids ancho="640" alto="480">
+  <tiposAsteroide>
+    <tipoAsteroide nombre="asteriode1" imagen="..\images\asteroide1.png" ancho="40" alto="40" rotacion="0" />
+    <tipoAsteroide nombre="asteriode2" imagen="..\images\asteroide2.png" ancho="40" alto="30" rotacion="45" />
+    <tipoAsteroide nombre="asteriode3" imagen="..\images\asteroide3.png" ancho="40" alto="40" rotacion="45" />
+    <tipoAsteroide nombre="asteriode4" imagen="..\images\asteroide4.png" ancho="40" alto="40" rotacion="0" />
+  </tiposAsteroide>
+  <asteroides>
+    <asteroide tipo="asteriode1" x="20" y="20" direccion="20" velocidad="50" />
+    <asteroide tipo="asteriode2" x="200" y="20" direccion="40" velocidad="10" />
+    <asteroide tipo="asteriode1" x="160" y="80" direccion="90" velocidad="64" />
+    <asteroide tipo="asteriode2" x="300" y="110" direccion="120" velocidad="8" />
+    <asteroide tipo="asteriode3" x="150" y="300" direccion="180" velocidad="64" />
+    <asteroide tipo="asteriode4" x="400" y="45" direccion="195" velocidad="45" />
+  </asteroides>
+  <nave imagen="..\images\nave.png" velRotacion="3" velMaxima="300" propulsion="100" friccion="50" duracionBala="3" />
+</asteroids>
