@@ -15,4 +15,5 @@
     <asteroide tipo="asteriode4" x="400" y="45" direccion="195" velocidad="45" />
   </asteroides>
   <nave imagen="..\images\nave.png" velRotacion="3" velMaxima="300" propulsion="100" friccion="50" duracionBala="3" />
+  
 </asteroids>
