@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Persistence", "Persistence\Persistence.vcxproj", "{1C211D49-884A-46D3-ADDE-069F88101E4B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{067C54F3-3573-4E56-ADF3-A8912DD1DC0A} = {067C54F3-3573-4E56-ADF3-A8912DD1DC0A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameModel", "GameModel\GameModel.vcxproj", "{067C54F3-3573-4E56-ADF3-A8912DD1DC0A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameBootstrap", "GameBootstrap\GameBootstrap.vcxproj", "{963CE916-79A3-4F7D-8EF5-23FAB68DD9D8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C211D49-884A-46D3-ADDE-069F88101E4B} = {1C211D49-884A-46D3-ADDE-069F88101E4B}
+		{6EC422AF-D275-46EB-A4E0-6D71DD92FE5E} = {6EC422AF-D275-46EB-A4E0-6D71DD92FE5E}
+		{067C54F3-3573-4E56-ADF3-A8912DD1DC0A} = {067C54F3-3573-4E56-ADF3-A8912DD1DC0A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameView", "GameView\GameView.vcxproj", "{6EC422AF-D275-46EB-A4E0-6D71DD92FE5E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{067C54F3-3573-4E56-ADF3-A8912DD1DC0A} = {067C54F3-3573-4E56-ADF3-A8912DD1DC0A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Util", "Util\Util.vcxproj", "{91C08611-B668-4202-B10E-0EA8CACAB232}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C211D49-884A-46D3-ADDE-069F88101E4B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C211D49-884A-46D3-ADDE-069F88101E4B}.Debug|Win32.Build.0 = Debug|Win32
+		{1C211D49-884A-46D3-ADDE-069F88101E4B}.Release|Win32.ActiveCfg = Release|Win32
+		{1C211D49-884A-46D3-ADDE-069F88101E4B}.Release|Win32.Build.0 = Release|Win32
+		{067C54F3-3573-4E56-ADF3-A8912DD1DC0A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{067C54F3-3573-4E56-ADF3-A8912DD1DC0A}.Debug|Win32.Build.0 = Debug|Win32
+		{067C54F3-3573-4E56-ADF3-A8912DD1DC0A}.Release|Win32.ActiveCfg = Release|Win32
+		{067C54F3-3573-4E56-ADF3-A8912DD1DC0A}.Release|Win32.Build.0 = Release|Win32
+		{963CE916-79A3-4F7D-8EF5-23FAB68DD9D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{963CE916-79A3-4F7D-8EF5-23FAB68DD9D8}.Debug|Win32.Build.0 = Debug|Win32
+		{963CE916-79A3-4F7D-8EF5-23FAB68DD9D8}.Release|Win32.ActiveCfg = Release|Win32
+		{963CE916-79A3-4F7D-8EF5-23FAB68DD9D8}.Release|Win32.Build.0 = Release|Win32
+		{6EC422AF-D275-46EB-A4E0-6D71DD92FE5E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6EC422AF-D275-46EB-A4E0-6D71DD92FE5E}.Debug|Win32.Build.0 = Debug|Win32
+		{6EC422AF-D275-46EB-A4E0-6D71DD92FE5E}.Release|Win32.ActiveCfg = Release|Win32
+		{6EC422AF-D275-46EB-A4E0-6D71DD92FE5E}.Release|Win32.Build.0 = Release|Win32
+		{91C08611-B668-4202-B10E-0EA8CACAB232}.Debug|Win32.ActiveCfg = Debug|Win32
+		{91C08611-B668-4202-B10E-0EA8CACAB232}.Debug|Win32.Build.0 = Debug|Win32
+		{91C08611-B668-4202-B10E-0EA8CACAB232}.Release|Win32.ActiveCfg = Release|Win32
+		{91C08611-B668-4202-B10E-0EA8CACAB232}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

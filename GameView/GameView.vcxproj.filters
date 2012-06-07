@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\view">
+      <UniqueIdentifier>{c60ab1cf-95f6-4f74-b130-dc3f9b3cb3c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\view">
+      <UniqueIdentifier>{32eff52a-fe4b-4f60-a4f3-e124babddae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sdl">
+      <UniqueIdentifier>{8a9a2468-efc1-4d71-b5d3-58f2331c7c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sdl">
+      <UniqueIdentifier>{e53e00d6-0315-45e5-9304-8bdb03412e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sdl\event">
+      <UniqueIdentifier>{eb648223-0b06-46a1-ad59-1bd41f32798f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sdl\event">
+      <UniqueIdentifier>{11359c3a-252e-45ae-9aa0-93625dcc4c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\controller">
+      <UniqueIdentifier>{7328ddcc-6c27-4260-9fbd-724a8ee7a660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\controller">
+      <UniqueIdentifier>{2ec0ba37-e4ed-4053-bb20-e255576f836a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sdl\mixer">
+      <UniqueIdentifier>{1388a7c2-1116-4285-895b-2e5a8d519f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sdl\mixer">
+      <UniqueIdentifier>{bd253989-54f3-46a8-b9c3-706c116d047d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="view\Window.h">
+      <Filter>Header Files\view</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLSurface.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="view\EntityView.h">
+      <Filter>Header Files\view</Filter>
+    </ClInclude>
+    <ClInclude Include="view\ScreenManager.h">
+      <Filter>Header Files\view</Filter>
+    </ClInclude>
+    <ClInclude Include="view\ShipView.h">
+      <Filter>Header Files\view</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLLabel.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLComponent.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\MouseListener.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\KeyboardListener.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLButton.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLTextbox.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLPanel.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLTabPanel.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLTab.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="view\StartWindow.h">
+      <Filter>Header Files\view</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLScrollBar.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\event\SDLEvent.h">
+      <Filter>Header Files\sdl\event</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\event\SDLMouseEvent.h">
+      <Filter>Header Files\sdl\event</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\event\SDLKeyboardEvent.h">
+      <Filter>Header Files\sdl\event</Filter>
+    </ClInclude>
+    <ClInclude Include="controller\ClientActionsListener.h">
+      <Filter>Header Files\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\Dimension.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\Viewport.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\Layout.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="view\ClientView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\ScrollablePanelLayout.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\Color.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLStatusBar.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLToggleButton.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\SDLButtonPanel.h">
+      <Filter>Header Files\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdl\mixer\Mixer.h">
+      <Filter>Header Files\sdl\mixer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="view\Window.cpp">
+      <Filter>Source Files\view</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLSurface.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="view\EntityView.cpp">
+      <Filter>Source Files\view</Filter>
+    </ClCompile>
+    <ClCompile Include="view\ScreenManager.cpp">
+      <Filter>Source Files\view</Filter>
+    </ClCompile>
+    <ClCompile Include="view\ShipView.cpp">
+      <Filter>Source Files\view</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLLabel.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLComponent.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\MouseListener.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\KeyboardListener.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLButton.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLTextbox.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLPanel.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLTabPanel.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLTab.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="view\StartWindow.cpp">
+      <Filter>Source Files\view</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLScrollBar.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\event\SDLEvent.cpp">
+      <Filter>Source Files\sdl\event</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\event\SDLKeyboardEvent.cpp">
+      <Filter>Source Files\sdl\event</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\event\SDLMouseEvent.cpp">
+      <Filter>Source Files\sdl\event</Filter>
+    </ClCompile>
+    <ClCompile Include="controller\ClientActionsListener.cpp">
+      <Filter>Source Files\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\Dimension.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\Viewport.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\Layout.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="view\ClientView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\ScrollablePanelLayout.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\Color.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLStatusBar.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLToggleButton.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\SDLButtonPanel.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdl\mixer\Mixer.cpp">
+      <Filter>Source Files\sdl\mixer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
